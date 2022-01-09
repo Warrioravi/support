@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(211, 209, 209, 0.281);
+}
+
+img {
+  height: 70%;
+}
+
+.header-icon-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header-icon-container > div {
+  padding: 20px;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+  background-color: rgb(1, 25, 49);
+  color: rgb(255, 255, 255);
+  overflow: scroll;
+}
+
+.newsContainer {
+  width: 100%;
+  margin-top: 1vh;
+  min-height: 6vh;
+  font-size: 14px;
+  color: rgba(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .sidebar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+  
+.mcontainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .mcontainer {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+  
+  
+
+.newsContainer:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+.mcontainer {
+  height: 100vh;
+  width: 80vw;
+  padding: 5vh;
+  overflow: scroll;
+}
+
+.filters {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters > button {
+  margin: 20px;
+  height: 5vh;
+  min-width: 200px;
+  border-radius: 2.5vh;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.filters > button.active {
+  background-color: rgb(30, 31, 75);
+  color: white;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.accordion {
+  color: black;
+  background-color: white;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: "+";
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+  height: 150px;
+}
+
+.accordion .container.active .label::before {
+  content: "-";
+  font-size: 30px;
+}
+
+.chatdiv {
+  position: fixed;
+  bottom: 20vh;
+  background-color: rgb(30, 31, 75);
+  color: seashell;
+  right: 1vh;
+  height: 5vh;
+  width: 5vh;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+}
+.chatdiv:hover {
+  background-color: slateblue;
+}
+.chatdiv > img {
+  height: 50%;
+}
+.chatbox {
+  height: 40vh;
+  width: 15vw;
+  position: fixed;
+  right: -2000px;
+  bottom: 0px;
+  background-color: slateblue;
+  opacity: 0.5;
+}
+.chatbox.active {
+  height: 40vh;
+  width: 15vw;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-color: slateblue;
+  opacity: 0.5;
+}

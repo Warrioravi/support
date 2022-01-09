@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png">
+        <div class="header-icon-container">
+            <div class="header-icon">Login</div>
+            <div class="header-icon">Dashboard</div>
+            <div class="header-icon">Pricing</div>
+        </div>
+
+    </header>
+
+    <div class="main">
+        <div class="sidebar">
+            <h3>Maersk Updates</h3>
+        </div>
+        <div class="mcontainer">
+
+            <div class="filters">
+                <button onclick="render('all')" class="active">All Issues</button>
+                <button onclick="render('shipping')">Shipment Related Issues</button>
+                <button onclick="render('pricing')">Pricing Related Issues</button>
+                <button onclick="render('tracking')">Tracking Related Issues</button>
+                <button onclick="render('payment')">Payment Related Issues</button>
+
+            </div>
+            <div class="accordion-body">
+                <h1>Frequently Asked Queries</h1>
+                <div class="accordion">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chatdiv">
+        <img src="./chat.png" alt="">
+    </div>
+    <div class="chatbox">
+
+    </div>
+    <script src="support.js"></script>
+
+
+
+</body>
+</html>
